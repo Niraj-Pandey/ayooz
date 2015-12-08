@@ -10,7 +10,7 @@ import angularBeans.api.http.Get;
 public class HelloBean {
 	
 	@Get
-	public String sayHello(String name) {
-		return "hello " + name;
+	public String getMessage(String name) {
+		return "Hello " + name;
 	}
 }
