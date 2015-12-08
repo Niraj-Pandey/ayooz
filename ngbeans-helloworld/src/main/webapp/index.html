@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="angular-beans.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body ng-app="myApp">
+	<div ng-controller="myCtrl">
+		<label>your name :</label> <input type="text" ng-model="name" />
+		<button ng-click="sayHello(name)">sayHello</button>
+		{{result}}
+	</div>
+</body>
+</html>
