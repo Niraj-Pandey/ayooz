@@ -2,18 +2,13 @@ package com.example;
 
 import java.io.IOException;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.mongodb.Mongo;
 
-import ma.example.SpringRestApp;
+import cz.jirutka.spring.embedmongo.EmbeddedMongoBuilder;
 
 @SpringBootApplication
 public class SpringRestAppTests {
