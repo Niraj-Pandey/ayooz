@@ -24,22 +24,22 @@ public class TaskController {
 	}
 
 	@PostConstruct
-    public void initData(){
+	public void initData(){
 		taskRepo.deleteAll();
 		taskRepo.save(new Task("1","task num 1"));
 		taskRepo.save(new Task("2","task num 2"));
 		taskRepo.save(new Task("3","task num 3"));
-    }
+	}
     
-    @RequestMapping("/tasks")
+	@RequestMapping("/tasks")
 	public List<Task> getAllTasks(){
 		return taskRepo.findAll();
 	}
-    
-    @RequestMapping(value = "/task/{taskId}")
-    public Task getUser(@PathVariable("taskId") String taskId) {
-    	return taskRepo.findByTaskId(taskId);
-    }
+	
+	@RequestMapping(value = "/task/{taskId}")
+	public Task getUser(@PathVariable("taskId") String taskId) {
+	    return taskRepo.findByTaskId(taskId);
+	}
 
 	public TaskRepository getTaskRepo() {
 		return taskRepo;
