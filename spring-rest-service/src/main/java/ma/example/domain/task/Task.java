@@ -9,11 +9,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "UserAccount")
 public class Task extends BaseEntity{
 	
-    @Indexed(unique=true)
-    private String taskId;
+    	@Indexed(unique=true)
+    	private String taskId;
     
 	private String name;
-
+	
 	public Task(String taskId, String name) {
 		super();
 		this.taskId = taskId;
@@ -23,11 +23,11 @@ public class Task extends BaseEntity{
 	public String getTaskId() {
 		return taskId;
 	}
-
+	
 	public void setTaskId(String taskId) {
 		this.taskId = taskId;
 	}
-
+	
 	public String getName() {
 		return name;
 	}
