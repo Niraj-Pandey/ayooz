@@ -37,7 +37,7 @@ public class TaskController {
 	}
 	
 	@RequestMapping(value = "/task/{taskId}")
-	public Task getUser(@PathVariable("taskId") String taskId) {
+	public Task getTask(@PathVariable("taskId") String taskId) {
 	    return taskRepo.findByTaskId(taskId);
 	}
 
