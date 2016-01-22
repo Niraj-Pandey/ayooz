@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import de.brockhaus.domain.Sensor;
 import de.brockhaus.domain.SensorRepository;
 
+/**
+ * @author Z.OUFTOU
+ */
 @RestController
 public class SensorController {
 	
