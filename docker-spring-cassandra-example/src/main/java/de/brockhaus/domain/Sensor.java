@@ -3,6 +3,9 @@ package de.brockhaus.domain;
 import org.springframework.data.cassandra.mapping.PrimaryKey;
 import org.springframework.data.cassandra.mapping.Table;
 
+/**
+ * @author z.ouftou
+ */
 @Table("sensors")
 public class Sensor {
 	
