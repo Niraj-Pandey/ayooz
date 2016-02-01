@@ -13,7 +13,7 @@ import de.brockhaus.domain.Sensor;
 import de.brockhaus.domain.SensorRepository;
 
 /**
- * @author zouftou
+ * @author z.ouftou
  */
 @RestController
 public class SensorController {
