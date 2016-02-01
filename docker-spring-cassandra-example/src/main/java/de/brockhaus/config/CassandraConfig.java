@@ -14,6 +14,9 @@ import org.springframework.data.cassandra.mapping.BasicCassandraMappingContext;
 import org.springframework.data.cassandra.mapping.CassandraMappingContext;
 import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
 
+/**
+ * @author z.ouftou
+ */
 @Configuration
 @EnableCassandraRepositories(basePackages = {"de.brockhaus.domain"})
 public class CassandraConfig {
